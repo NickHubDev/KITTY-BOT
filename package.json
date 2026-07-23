@@ -1,0 +1,46 @@
+{
+  "name": "kitty",
+  "version": "0.0.0",
+  "description": "Minimal Discord.js + TypeScript template",
+  "keywords": [
+    "discord",
+    "bot",
+    "typescript"
+  ],
+  "homepage": "https://github.com/NickHubDev/KITTY-BOT#readme",
+  "bugs": {
+    "url": "https://github.com/NickHubDev/KITTY-BOT/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickHubDev/KITTY-BOT.git"
+  },
+  "license": "ISC",
+  "author": "NIZOLAX",
+  "type": "module",
+  "main": "/src/index.ts",
+  "files": [
+    "src",
+    "dist",
+    "!.env*",
+    "!*.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev src/bot.ts",
+    "start": "node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
