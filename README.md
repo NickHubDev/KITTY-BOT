@@ -1,5 +1,7 @@
 # 🐈‍⬛ **KITTY BOT**
 
+**PASATE POR:** [V0](./V0.md)
+
 ### ¿Qué es KITTY BOT?
 
 Kitty Bot es el Bot de Discord perteneciente a la comunidad de programación y desarrollo de software del creador de contenido NIZOLAX.

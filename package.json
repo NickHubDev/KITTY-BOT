@@ -1,11 +1,11 @@
 {
   "name": "kitty",
-  "version": "0.0.0",
-  "description": "Minimal Discord.js + TypeScript template",
+  "version": "1.0.0",
+  "description": "Kitty Bot es el Bot de Discord perteneciente a la comunidad de programación y desarrollo de software del creador de contenido NIZOLAX.\r Este busca resolver muchas de las dudas de la actualidad en bots con Discord.js, \r y decide hacerlo de una manera muy simple, ofreciendote el código de manera limpia y gratuita.",
   "keywords": [
+    "kitty",
     "discord",
-    "bot",
-    "typescript"
+    "bot"
   ],
   "homepage": "https://github.com/NickHubDev/KITTY-BOT#readme",
   "bugs": {
@@ -18,29 +18,21 @@
   "license": "ISC",
   "author": "NIZOLAX",
   "type": "module",
-  "main": "/src/index.ts",
-  "files": [
-    "src",
-    "dist",
-    "!.env*",
-    "!*.md"
-  ],
+  "main": "index.ts",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node-dev src/bot.ts",
-    "start": "node ./src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsx index.ts",
+    "events": "tsx src/handlers/eventHandler.ts",
+    "commands": "tsx src/handlers/commandHandler.ts"
   },
   "dependencies": {
-    "chalk": "^5.6.2",
-    "discord.js": "^14.27.0",
-    "dotenv": "^17.4.2"
+    "@tsconfig/recommended": "^1.0.13"
   },
   "devDependencies": {
-    "ts-node-dev": "^2.0.0",
+    "@types/node": "^26.1.1",
+    "chalk": "^5.6.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2",
+    "tsx": "^4.23.1",
     "typescript": "^7.0.2"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
