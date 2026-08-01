@@ -33,7 +33,7 @@ async function loadCommands() {
             console.error(chalk.bold.red(`[WARNING] The command has an error, chek it out`));
         }
 
-        client.commands.set(create.data.name, create.execute)
+        client.commands.set(create.data.name, create)
         console.log(chalk.bold.green(`✅ Command ${create.data.name} loaded: execute function verified`));
     };
 

@@ -4,7 +4,7 @@ class CustomClient extends Client {
     public commands = 
     new Collection<
     string,
-    any 
+    Function
     >();
 
     constructor() {

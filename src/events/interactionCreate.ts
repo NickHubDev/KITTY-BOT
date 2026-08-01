@@ -8,7 +8,7 @@ function interactionCreate() {
         
         const command = client.commands.get(interaction.commandName);
 
-        if (!command || typeof command.execute !== 'function') {
+        if (!command) {
             console.error(chalk.bold.red(`No command named as ${interaction.commandName}, please, check it out`))
             return;
         }
