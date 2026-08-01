@@ -1,84 +1,198 @@
-# 🐈‍⬛ **KITTY BOT**
+# 🐈‍⬛ KITTY BOT
 
-**PASATE POR:** [V0](./V0.md)
+> A modern, open-source Discord.js v14 bot built with **TypeScript**, designed to teach developers how to create scalable Discord bots following real-world architecture and best practices.
 
-### ¿Qué es KITTY BOT?
+---
 
-Kitty Bot es el Bot de Discord perteneciente a la comunidad de programación y desarrollo de software del creador de contenido NIZOLAX.
-Este busca resolver muchas de las dudas de la actualidad en bots con Discord.js, 
-y decide hacerlo de una manera muy simple, ofreciendote el código de manera limpia y gratuita.
+## 📚 Documentation
 
-Como explica el propio NIZOLAX, muchas de las mejores practicas de esta herramienta
-no estan explicadas ni por los propios Devs del proyecto, por lo que cualquier usuario que quiera aprender todo sobre como
-se desarrolla un bot de Discord con buenas practicas y documentación solo
-deberá acceder al repositorio de este en: [PUBLIC-KITTY-BOT](https://github.com/NickHubDev/PUBLIC-KITTY-BOT.git).
+Before getting started, check the project documentation.
 
-### ¿Cómo lo uso?
+- 📖 **Version History:** [CHANGELOG.md](./CHANGELOG.md)
+- 🤝 **Contributing Guide:** [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-NIZOLAX no recomienda copiar su repositorio y modificarlo por encima, sino
-que recomienda encarecidamente que nos basemos en su repositorio para seguir la documentación
-de su bot a la misma vez que vemos los ejemplos de código y programamos nuestro bot a mano.
+---
 
-Aunque para gente con un poco de conocimiento en el tema, 
-NIZOLAX recomienda el uso de una plantilla básica para desarrollar
-el bot de manera más rápida y eficiente.
+# What is KITTY BOT?
 
-[PLANTILLA](https://github.com/OfficialDelta/TypeScript-Discord.js-v14-Template)
+KITTY BOT is the official Discord bot developed for the **NIZOLAX** programming community.
 
-### Requerimientos
+Unlike many Discord bot repositories that only provide source code, this project aims to become a complete educational resource.
 
-Se recomienda hacer uso de una version de **<span style="color:#00FF00">Node.js 24.16.0 ↑</span>**, además de usar
-**chalk** y **TypeScript** para que todo sea consistente y funcione a la perfección.
+The goal is not only to publish working code, but also to explain **why** every architectural decision has been made.
 
-Este Bot esta desarrollado en Discord.js V14 al momento en el que se lee esto, pero
-apenas haya una actualización de la API, este código será actualizado lo antes
-posible para que el usuario pueda sacar el mayor provecho a la actualización.
+Throughout the documentation you'll learn about:
 
-### ¿Es posible usar KITTY en otros servidores?
+- Discord.js v14
+- TypeScript
+- Scalable project architecture
+- Command handlers
+- Event handlers
+- Custom Client
+- Modern ESM development
+- Best practices used in production bots
 
-**NO**, o al menos hasta día de hoy, ya que NIZOLAX no ha desarrollado una aplicación DashBoard para su bot, ya que
-segun su filosofía: ***"Si alguien quiere mi bot, deberá saber usarlo, es código en bruto y no pienso
-darlo en bandeja de plata para que llega directo a sus boquitas."***
+---
 
-Desde su parecer, proporcionar una dashboard haría al bot menos eficiente y personalizable,
-por eso se vende como un repositorio con una estruxtura personalizable y opensource que cualquiera
-pueda tocar sin limitaciones.
+# Philosophy
 
-### Servidores que lo usan
+This repository is intended to teach developers **how to build their own Discord bot**, not simply copy one.
 
-Los servidores que han tenido la posibilidad de probarlo son:
+Instead of cloning the repository and changing a few files, you're encouraged to follow the documentation and recreate the project yourself.
 
-* **NIZOLAX COMMUNITY**
+Learning by building is far more valuable than copying code.
 
-* **The Whites**
+---
 
-* **NIZOD**
+# Getting Started
 
-### Base de datos
+Clone the repository:
 
-La base de datos usada para este proyecto esta en elección aún.
+```bash
+git clone https://github.com/NickHubDev/PUBLIC-KITTY-BOT.git
+```
 
-### APIs
+Install dependencies:
 
-Por el momento se necesitaran APIs como GoogleTranslate y Discord.js
+```bash
+npm install
+```
 
-### Estructura de Carpetas
+Run the project:
 
+```bash
+npm run dev
+```
+
+---
+
+# Requirements
+
+The project currently uses:
+
+- Node.js **24.16.0** or newer
+- TypeScript
+- Discord.js v14
+- Chalk
+
+Future releases will always target the latest stable version of Discord.js whenever possible.
+
+---
+
+# Project Structure
+
+```
 src
-├─ commands
-│  ├─ moderation
-│  |─ utility
-│  └─ fun
 │
-├─ events
-│  ├─ client
-│  ├─ guild
-│  └─ message
+├── commands/
+│   ├── moderation/
+│   ├── utility/
+│   └── fun/
 │
-├─ handlers
+├── events/
+│   ├── client/
+│   ├── guild/
+│   └── interaction/
 │
-├─ services
-│
-├─ database
-│
-└─ utils
+├── handlers/
+├── services/
+├── database/
+├── structures/
+└── utils/
+```
+
+The architecture has been designed to keep every module independent and easy to maintain as the project grows.
+
+---
+
+# Current Features
+
+- ✅ Slash Commands
+- ✅ Modular Event Handler
+- ✅ Command Handler
+- ✅ Custom Client
+- ✅ TypeScript
+- ✅ ESM Support
+- ✅ Path Aliases
+- ✅ Clean Project Structure
+
+---
+
+# Planned Features
+
+The roadmap currently includes:
+
+- AI Translation Commands
+- Moderation System
+- Logging System
+- Ticket System
+- Report System
+- Database Integration
+- Role Management
+- Utility Commands
+- Dashboard (under consideration)
+
+---
+
+# Can I use KITTY BOT?
+
+Absolutely.
+
+This project is completely open source and intended to be used as a learning resource.
+
+However, it is **strongly recommended** that you understand the code before modifying it.
+
+The objective is to help developers learn how a professional Discord bot is structured rather than providing a ready-to-use product.
+
+---
+
+# Community
+
+KITTY BOT has already been tested in several communities, including:
+
+- NIZOLAX COMMUNITY
+- The Whites
+- NIZOD
+
+---
+
+# Database
+
+The database solution is currently under evaluation.
+
+Possible candidates include:
+
+- PostgreSQL
+- MySQL
+- MongoDB
+
+---
+
+# APIs
+
+Current APIs:
+
+- Discord API
+- Google Translate API *(planned)*
+
+Additional APIs may be added in future releases.
+
+---
+
+# Contributing
+
+Contributions are always welcome.
+
+Please read **CONTRIBUTING.md** before opening an issue or submitting a Pull Request.
+
+---
+
+# License
+
+This project is distributed as an open-source educational resource.
+
+Please respect the license and give proper credit if you use parts of this project.
+
+---
+
+Made with ❤️ by **NIZOLAX**
