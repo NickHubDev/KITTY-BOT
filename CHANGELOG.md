@@ -2,9 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+# [0.2.0] - 2026/08/04
+
+## ✨ Added
+
+### Translate Command
+
+There be add a command for translate messages to every single type of language,
+this make the community more accesible for everyone.
+
+### clearChannel Command
+
+One of our more util command, this command still in test time,
+so is not finished and can't be use eassily, we are working for fix 
+and make better this command.
+
 ---
 
-# [0.0.0] - 2026-08-01
+# [0.1.0] - 2026/08/01
 
 ## 🚀 Initial Release
 
