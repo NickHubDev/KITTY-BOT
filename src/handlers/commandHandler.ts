@@ -3,14 +3,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import chalk from 'chalk';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { Collection, REST, Routes } from 'discord.js';
+import { REST, Routes } from 'discord.js';
 import 'dotenv/config';
 
 async function loadCommands() {
 
-    const TOKEN = process.env.TOKEN;
-    const clientId = process.env.clientId;
-    const guildId = process.env.guildId;
+    const TOKEN = process.env['TOKEN'];
+    const clientId = process.env['clientId'];
+    const guildId = process.env['guildId'];
 
     const commands = [];
 
@@ -37,11 +37,11 @@ async function loadCommands() {
         console.log(chalk.bold.green(`✅ Command ${create.data.name} loaded: execute function verified`));
     };
 
-    const rest = new REST().setToken(TOKEN);
+    const rest = new REST().setToken(TOKEN!);
 
         try {
             console.log(chalk.bold.blueBright(`${commands.length} commands are handling, wait some seconds, please...`));
-            const data = rest.put(Routes.applicationGuildCommands(clientId,guildId), { body: commands });
+            const data = await rest.put(Routes.applicationGuildCommands(clientId!,guildId!), { body: commands });
             console.log(chalk.bold.magentaBright(`${commands.length} commands could be sent`));
         } catch (err) {
             console.log(chalk.bold.red(`The commands couldnt be sent, check it: [${err}]`));

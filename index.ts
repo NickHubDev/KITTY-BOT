@@ -8,7 +8,7 @@ console.log('Kitty Bot - Starting up...');
 async function start() {
     await loadCommands();
     await loadEvents();
-    client.login(process.env.TOKEN);
+    client.login(process.env['TOKEN']);
 }
 
 start();

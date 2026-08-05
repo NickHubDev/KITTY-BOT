@@ -1,5 +1,5 @@
 {
-  "name": "kitty",
+  "name": "@nickhubdev/kitty-package",
   "version": "1.0.0",
   "description": "Kitty Bot es el Bot de Discord perteneciente a la comunidad de programación y desarrollo de software del creador de contenido NIZOLAX.\r Este busca resolver muchas de las dudas de la actualidad en bots con Discord.js, \r y decide hacerlo de una manera muy simple, ofreciendote el código de manera limpia y gratuita.",
   "keywords": [
@@ -7,6 +7,9 @@
     "discord",
     "bot"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "homepage": "https://github.com/NickHubDev/KITTY-BOT#readme",
   "bugs": {
     "url": "https://github.com/NickHubDev/KITTY-BOT/issues"
